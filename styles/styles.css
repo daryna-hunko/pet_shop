@@ -1,0 +1,175 @@
+/* reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end reset*/
+
+header, footer {
+  background: rgba(0, 0, 0, .8);
+  color: #fff;
+  padding: 20px 0;
+}
+main {
+  padding: 40px 0;
+}
+.shopping-cart {
+  float: right;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.checkbox {
+  padding: 8px 0;
+}
+.subFilters {
+  padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, .8);
+}
+.card {
+	position: relative;
+	margin: 0 0 25px;
+}
+.card:hover .descr {
+	display: block;
+}
+.descr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 20px;
+	right: 0;
+	background: #fff;
+	padding: 10px;
+	display: none;
+}
+.ui.cards>.card>.content p {
+	margin: 5px 0;
+	font-size: 90%;
+}
+.card .buttons {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -74px;
+	z-index: 10;
+}
+.card.no-products .image, .card.no-products .header, .card.no-products .descr {
+	opacity: .4;
+}
+.card.no-products:hover .descr {
+	display: none;
+}
+.shopping-cart-wrap {
+	position: relative;
+}
+.shopping-cart-inner {
+	position: absolute;
+	top: 68px;
+	right: 0;
+	z-index: 20;
+	background: #fff;
+	display: none;
+	color: #000;
+}
+/*.shopping-cart:hover + .shopping-cart-inner {
+	display: block;
+}*/
+.shopping-cart-inner.visible {
+	display: block;
+	min-height: 200px;
+	width: 200px;
+	border: 1px solid rgba(0, 0, 0, .8);
+}
+.shopping-cart-inner .row {
+	overflow: hidden;
+	clear: both;
+}
+
+.shopping-cart-cont {
+	border-bottom: 1px solid rgba(0, 0, 0, .8);
+	padding: 2px;
+}
+.shopping-cart-cont:last-child {
+	border-bottom: none;
+}
+.shopping-cart-inner .col {
+	float: left;
+	width: 50%;
+}
+.shopping-cart-empty {
+	height: 200px;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, .8);
+	border-radius: 4px;
+	padding: 50px;
+}
+.shopping-cart-empty img{
+	height: 100px;
+}
+.enter-shop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999;
+	background: #fff;
+	text-align: center;
+}
+.enter-shop img{
+	height: 100vh;
+}
+.hidden {
+	display: none;
+}
+.order {
+	font-size: 20vh;
+	margin: 10px auto;
+	text-align: center;
+	cursor: pointer;
+}

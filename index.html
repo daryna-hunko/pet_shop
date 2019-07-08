@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./styles/semantic.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="./js/semantic.min.js"></script>
+    <script type="module" src="./js/main.js" async></script>
+    <!--<script type="module" src="./js/scripts.js" async></script>-->
+  </head>
+
+  <body>
+    <header>
+      <div class="ui grid container">
+        <div class="three wide column">
+          <div class="ui pagination menu lang-menu">
+            <a class="item active">
+              en
+            </a>
+            <a class="item">
+              ru
+            </a>
+            <a class="item">
+              ua
+            </a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <div class="ui right aligned category search">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="...">
+              <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+          </div>
+        </div>
+        <div class="six wide column">
+          <div class="shopping-cart-wrap">
+            <div  class="shopping-cart">
+              <i class="shopping cart icon large"></i>
+            </div>
+            <div class="shopping-cart-inner"></div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <main>
+      <div class="enter-shop"><img src="https://www.pinclipart.com/picdir/big/149-1499692_littlest-pet-shop-of-horrors-little-pet-shop.png"></div>
+      <div class="ui grid container shop hidden">
+        <div class="three wide column">
+          <div class="filter">
+              <div class="ui form">
+                <div class="grouped fields">
+                  <label>Filters</label>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="radio" name="animals-checkbox" checked  class="checkbox-all" id="checkbox-all">
+                      <label for="checkbox-all">All animals</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="radio" name="animals-checkbox" class="checkbox-cat" id="checkbox-cat">
+                      <label for="checkbox-cat">Cats</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="radio" name="animals-checkbox" class="checkbox-dog" id="checkbox-dog">
+                      <label for="checkbox-dog">Dogs</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="radio" name="animals-checkbox" class="checkbox-bird" id="checkbox-bird">
+                      <label for="checkbox-bird">Birds</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="radio" name="animals-checkbox"  class="checkbox-fish" id="checkbox-fish">
+                      <label for="checkbox-fish">Fish</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!--
+            <div class="main-subFilters subFilters">
+                <div class="ui toggle checkbox">
+                  <input type="checkbox" name="rapacity" checked>
+                  <label>Rapacity</label>
+                </div>
+
+
+            </div>
+
+            <div class="cat-subFilters subFilters">
+
+            </div>
+            <div class="dog-subFilters subFilters">
+
+            </div>
+            <div class="bird-subFilters subFilters">
+
+            </div>
+            <div class="fish-subFilters subFilters">
+
+            </div>
+-->
+
+
+          </div>
+        </div>
+        <div class="thirteen wide column">
+          <div class="products-container ui link cards">
+            <!--
+              TEMPLATE CARD
+              <div class="ui card">
+              <div class="image">
+                <img src="https://semantic-ui.com/images/avatar2/large/kristy.png">
+              </div>
+              <div class="content">
+                <a class="header">Kristy</a>
+                <div class="available">Available at the moment: 100</div>
+                <div class="ui buttons">
+                  <button class="ui disabled negative button"><i class="minus icon"></i></button>
+                  <div class="or"></div>
+                  <button class="ui enabled positive button"><i class="plus icon"></i></button>
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="ui grid container">
+        <div class="column">
+        &copy; Слепила из того, что было
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
