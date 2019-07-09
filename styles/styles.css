@@ -162,13 +162,13 @@ main {
 	text-align: center;
 }
 .enter-shop img{
-	height: 138px;
+	height: 100vh;
 }
 .hidden {
 	display: none;
 }
 .order {
-	font-size: 20vh;
+	font-size: 138px;
 	margin: 10px auto;
 	text-align: center;
 	cursor: pointer;
