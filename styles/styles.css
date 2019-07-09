@@ -76,6 +76,7 @@ main {
 .card {
 	position: relative;
 	margin: 0 0 25px;
+	cursor: pointer;
 }
 .card:hover .descr {
 	display: block;
